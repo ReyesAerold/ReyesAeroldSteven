@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Business</title>
+    <link rel="stylesheet" href="./appdev.css">
+    <style>
+        /* Order Section Enhancements */
+        .order-form {
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero{
+            background-image: url(./BG.jpg);
+            background-size: cover;
+        }
+
+        .order-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .order-form label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #d3a679;
+        }
+
+        .order-form input,
+        .order-form select,
+        .order-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .order-form input:focus,
+        .order-form select:focus,
+        .order-form textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px #d3a679;
+        }
+
+        .order-form button {
+            background-color: #d3a679;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-form button:hover {
+            background-color: #b6865e;
+        }
+
+        .order-form .form-group textarea {
+            resize: none;
+        }
+
+        .order-section h2 {
+            text-align: center;
+            color: #d3a679;
+            margin-bottom: 20px;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Cafe Bliss</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">&#9776;</button>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to The Cafe Bliss</h1>
+        <p>Get ready to indulge in our wide array of sweets, drinks, treats and many more. Step into our cozy lounge and embrace the warmth of good company, soothing brews, and comforting ambience. A paradise away from the daily stresses of life, come forth and join us here in The Cafe Bliss. Come join us now! Check out our offered items in the menu tab.</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Here's a refined version of your "About Us" section:
+
+            **About Us**  
+            At Café Bliss, we believe every cup tells a story. Our passion for quality coffee and freshly baked pastries drives us to serve only the best, crafted with love and attention to detail. Whether you're here for a quick pick-me-up or a moment to savor, we promise a cozy, welcoming atmosphere where every visit feels like home. Come in, relax, and experience the bliss!``</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="c:\Users\TOSHIBA\Downloads\Does Cheese, Nuts or Coffee Impact a Ketogenic Diet_ - My Keto Coach.jpg" alt="Coffee">
+                <h3>Espresso</h3>
+                <p>Rich and bold espresso.</p>
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\TOSHIBA\Downloads\2cdb22ee-2eca-4569-af0f-37e9fd22aec6.jpg" alt="Pastry">
+                <h3>Pastry</h3>
+                <p>Freshly baked croissant.</p>
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\TOSHIBA\Downloads\Ultimate BLT Grilled Cheese Sandwich.jpg" alt="Sandwich">
+                <h3>Sandwich</h3>
+                <p>Delicious and filling sandwich.</p>
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\TOSHIBA\Downloads\Cappucino.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Frothy and creamy cappuccino.</p>
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\TOSHIBA\Downloads\Lemon Blueberry Muffins (Easy Recipe).jpg" alt="Muffin">
+                <h3>Blueberry Muffin</h3>
+                <p>Soft and delicious muffin.</p>
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\TOSHIBA\Downloads\Long Island Iced Tea & Long Island Drink Variations.jpg" alt="Tea">
+                <h3>Herbal Tea</h3>
+                <p>Relaxing and flavorful tea.</p>
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\TOSHIBA\Downloads\Grilled Chicken Salad Recipe Ingredients_ For the….jpg" alt="Salad">
+                <h3>Garden Salad</h3>
+                <p>Fresh and healthy salad.</p>
+            </div>
+            <div class="menu-item best-seller">
+                <img src="c:\Users\TOSHIBA\Downloads\Caramel Frappuccino Recipe (Starbucks Copycat).jpg" alt="Frappe">
+                <h3>Mocha Frappe <span class="badge">Best Seller</span></h3>
+                <p>Chilled and chocolaty treat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="section">
+        <h2>Place Your Order</h2>
+        <form class="order-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="menu-item">Select Item:</label>
+                <select id="menu-item" name="menu-item" required>
+                    <option value="">--Select an item--</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="pastry">Pastry</option>
+                    <option value="sandwich">Sandwich</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="muffin">Blueberry Muffin</option>
+                    <option value="tea">Herbal Tea</option>
+                    <option value="salad">Garden Salad</option>
+                    <option value="frappe">Mocha Frappe</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required placeholder="Enter quantity">
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Any special requests?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Submit Order</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Visit us or drop us a message.</p>
+        <p>Email: contact@cafebliss.com | Phone: (123) 456-7890</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Cafe Bliss. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle Navbar for Mobile View
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
